@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FA"
+    tools:context=".coordi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Encabezado con logos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FF9800"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:contentDescription="Logo TecNM"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tecnm" />
+
+            <ImageView
+                android:layout_width="201dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:contentDescription="Logo ITSTE"
+                android:src="@drawable/itste" />
+
+
+        </LinearLayout>
+
+
+        <!-- Tarjeta central -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:background="@drawable/contenedor"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:elevation="6dp"
+            android:gravity="center">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido al Panel Coordinador"
+                android:textColor="#001B73"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aquí se podra administrar usuarios."
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:contentDescription="Logo TecNM"
+                android:src="@drawable/itste" />
+
+            <Button
+                android:id="@+id/btnregtutores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrar tutores"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#003366"
+                android:drawableStart="@drawable/usuario"
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/btnregestuduantes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrar estudiantes"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#003366"
+                android:drawableStart="@drawable/usuario"
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
