@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".inicio_estudiante">
+    android:background="#F5F7FA"
+    tools:context=".inicio_tutores">
 
     <!-- Encabezado -->
     <LinearLayout
@@ -15,17 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
-        android:background="#FF771B"
+        android:background="#FFA500"
         android:padding="8dp"
         android:gravity="center_vertical">
-
-        <ImageView
-            android:id="@+id/imageViewTecnm"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/tecnm" />
 
         <ImageView
             android:id="@+id/imageViewItste"
@@ -34,6 +25,15 @@
             android:layout_weight="1"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/itste" />
+        <ImageView
+            android:id="@+id/imageViewTecnm"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/tecnm" />
+
+
     </LinearLayout>
 
     <!-- Imagen de usuario y nombre -->
@@ -60,49 +60,21 @@
             android:id="@+id/user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre"
+            android:text="Tutor"
             android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="16sp" />
     </LinearLayout>
 
-    <!-- Contenedor con esquinas redondeadas -->
-    <LinearLayout
-        android:id="@+id/container_info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/contenedor"
-        android:elevation="6dp"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:layout_margin="20dp"
-        android:layout_below="@id/user_section">
-
-        <TextView
-            android:id="@+id/bienvenida"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bienvenido"
-            android:textSize="25sp"
-            android:textColor="#001B73"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/texto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Recuerda que las tutorías son obligatorias. En caso de no asistir deberás presentar tu justificante."
-            android:textSize="18sp" />
-
-    </LinearLayout>
-
-    <!-- Sección de tutorías -->
+    <!-- Sección Tutorías Pendientes -->
     <LinearLayout
         android:id="@+id/tutorias_section"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/container_info"
-        android:layout_marginTop="186dp"
+        android:layout_below="@id/user_section"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="279dp"
+        android:layout_marginBottom="111dp"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="16dp">
@@ -142,5 +114,7 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+
 </RelativeLayout>
+
 

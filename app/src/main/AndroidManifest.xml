@@ -12,6 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TUTORIAS">
         <activity
+            android:name=".reportes"
+            android:exported="false" />
+        <activity
+            android:name=".documentos"
+            android:exported="false" />
+        <activity
+            android:name=".calendario"
+            android:exported="false" />
+        <activity
+            android:name=".registros"
+            android:exported="false" />
+        <activity
+            android:name=".regestudiantes"
+            android:exported="false" />
+        <activity
+            android:name=".regtutores"
+            android:exported="false" />
+        <activity
+            android:name=".inicio_tutores"
+            android:exported="false" />
+        <activity
             android:name=".inicio_estudiante"
             android:exported="false" />
         <activity

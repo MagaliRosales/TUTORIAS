@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/home"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/nav_registros"
+            android:icon="@drawable/agregar"
+            android:title="Registros" />
+
+        <item
+            android:id="@+id/nav_documentos"
+            android:icon="@drawable/documentos"
+            android:title="Documentos" />
+
+        <item
+            android:id="@+id/nav_calendarios"
+            android:icon="@drawable/calendario"
+            android:title="Calendarios" />
+
+        <item
+            android:id="@+id/nav_constancias"
+            android:icon="@drawable/documentos"
+            android:title="Reportes" />
+
+        <item
+            android:id="@+id/nav_cerrar_sesion"
+            android:icon="@drawable/cerrarsesion"
+            android:title="Cerrar Sesión" />
+
+    </group>
+
+</menu>

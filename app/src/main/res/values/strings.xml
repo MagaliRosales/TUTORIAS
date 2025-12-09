@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">TUTORIAS</string>
+
+
+    <string-array name="carreras">
+        <item>Sistemas Computacionales</item>
+        <item>Gastonomia</item>
+        <item>Logistica</item>
+        <item>Administración</item>
+        <item>Desarrollo Comunitario</item>
+    </string-array>
+
+    <string-array name="semestres">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="tutores">
+        <item>tutor1</item>
+        <item>tutor2</item>
+        <item>tutor3</item>
+        <item>tutor4</item>
+    </string-array>
+
 </resources>
